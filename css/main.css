@@ -6,30 +6,44 @@
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
-  }
+}
 
-  @font-face {
+@font-face {
     font-display: swap; 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2');
-  }
+}
 
-  @font-face {
+@font-face {
     font-display: swap;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
-  }
+}
 
+@font-face {
+    font-display: swap;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/abel-v18-latin-regular.woff2') format('woff2');
+}
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: "Poppins", sans-serif;
     background-color: #00040F;
@@ -37,6 +51,10 @@ body {
     background-image: url(../images/hero-bg.png);
     background-repeat: no-repeat;
     background-position: calc(50% + 615px) -600px;
+}
+
+.site-main {
+    flex-grow: 1;
 }
 
 img {
@@ -81,7 +99,7 @@ a {
     display: inline-block;
     color: white;
     font-size: 18px;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-weight: 600;
     line-height: 23.40px;
     word-wrap: break-word;
@@ -103,7 +121,7 @@ a {
 .nav-link {
     color: rgba(255, 255, 255, 0.70);
     font-size: 16px;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-weight: 400;
     line-height: 20.80px;
     word-wrap: break-word;
@@ -142,7 +160,7 @@ a {
     margin: 0;
     margin-left: 13px;
     color: rgba(255, 255, 255, 0.60);
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -166,7 +184,7 @@ a {
     margin: 0;
     margin-bottom: 40px;
     color: #FFF;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 72px;
     font-style: normal;
     font-weight: 600;
@@ -189,7 +207,7 @@ a {
 .text {
     margin: 0;
     color: rgba(255, 255, 255, 0.70);
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -228,7 +246,7 @@ a {
 
 .article-span {
     color: #FFF;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 40.893px;
     font-style: normal;
     font-weight: 600;
@@ -237,7 +255,7 @@ a {
 }
 
 .article-text {
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 20.446px;
     font-style: normal;
     font-weight: 400;
@@ -273,7 +291,7 @@ a {
 
 .item-title {
     color: #FFF;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
@@ -290,7 +308,7 @@ a {
 
 .item-text {
     color: rgba(255, 255, 255, 0.70);
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -301,7 +319,7 @@ a {
 
 .item-link {
     color: #00040E;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -350,7 +368,7 @@ a {
 
 .subtitle {
     color: #FFF;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -363,7 +381,7 @@ a {
 
 .subtext {
     color: rgba(255, 255, 255, 0.70);
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -415,7 +433,7 @@ a {
 .thoughts-title {
     margin: 0;
     color: #FFF;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
@@ -429,7 +447,7 @@ a {
 .thoughts-desc {
     margin: 0;
     color: rgba(255, 255, 255, 0.70);
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -473,7 +491,7 @@ a {
     margin: 0;
     margin-bottom: 24px;
     color: #FFF;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -495,7 +513,7 @@ a {
 .thoughts-name {
     margin: 0;
     color: #FFF;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -506,7 +524,7 @@ a {
     margin: 0;
     color: #FFF;
     opacity: 0.5;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -514,3 +532,182 @@ a {
 }
 
 /* THOUGHTS SECTION ENDED */
+
+
+/* CONNECT SECTION STARTED */
+
+.connect {
+    margin-bottom: 110px;
+}
+
+.connect-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* CONNECT SECTION ENDED */
+
+
+/* SERVICES SECTION STARTED */
+
+.services {
+    padding-bottom: 82px;
+}
+
+.services-inner {
+    background-image: url(../images/services-bg.png);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 72px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-title {
+    color: #FFF;
+    font-family: "Poppins";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.services-title-div {
+    width: 460px;
+}
+
+.services-text {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Poppins";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.18px;
+    margin: 0;
+}
+
+.services-link {
+    color: #00040E;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%);
+    padding: 19px 33px;
+}
+
+/* SERVICES SECTION ENDED */
+
+/* FOOTER STARTED */
+
+.site-footer {
+    background: rgba(11, 10, 12, 0.60);
+}
+
+.footer-top {
+    padding: 72px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #3F3E45;
+}
+
+.footer__text-div {
+    width: 312px;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.hoobank {
+    margin-left: 9px;
+}
+
+.footer__top-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 100px;
+    text-align-last: left;
+}
+
+.footer__top-item {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.footer__top-sublist {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer__top-subitem {
+    margin-top: 12px;
+}
+
+.footer__top-subitem:nth-child(1) {
+    margin-top: 24px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.footer__top-sublink {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.footer__bottom-text-div {
+    display: flex;
+}
+
+.footer___bottom-text {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+}
+
+.footer___bottom-text:nth-child(1) {
+    font-family: "Abel";
+}
+
+.footer__bottom-img {
+    margin-left: 8px;
+    margin-right: 18px;
+}
+
+/* FOOTER ENDED */
